@@ -1,49 +1,214 @@
+import java.lang.reflect.Method;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
-import java.io.*;
-
 public class PracticeProblemTest {
+@Test
+@DisplayName("")
+void sumOfDigitsTest1() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("sumOfDigits", cArg);
+  // Enter code here
+    assertEquals(9, (int)method.invoke(null, 234));
+}
 
-   @Test
-   public void testOutput()
-   {
-     PrintStream originalOut = System.out;
-     ByteArrayOutputStream bos = new ByteArrayOutputStream();
-     System.setOut(new PrintStream(bos));
 
-     // action
-     PracticeProblem.q1();
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void factorialTest2() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("factorial", cArg);
+  // Enter code here
+    assertEquals(1, (int)method.invoke(null, 0));
+}
 
-     // assertion
-     assertEquals("There once was a man from St. Ives.\n", bos.toString());
 
-     // undo the binding in System
-     System.setOut(originalOut);
-   }
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void factorialTest3() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("factorial", cArg);
+  // Enter code here
+    assertEquals(1, (int)method.invoke(null, 1));
+}
 
-   @Test
-   public void testInputandOutput()
-   {
-      String data = "Users Input";
-      System.setIn(new ByteArrayInputStream(data.getBytes()));
-      
-      PrintStream originalOut = System.out;
-      ByteArrayOutputStream bos = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(bos));
 
-      // action
-      PracticeProblem.q1();
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void factorialTest4() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("factorial", cArg);
+  // Enter code here
+    assertEquals(0, (int)method.invoke(null, -5));
+}
 
-      // assertion
-      assertEquals("There once was a man from St. Ives.\n", bos.toString());
 
-      // undo the binding in System
-      System.setOut(originalOut);
-   }
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void factorialTest5() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("factorial", cArg);
+  // Enter code here
+    assertEquals(3628800, (int)method.invoke(null, 10));
+}
 
-   @Test
-   public void testQ3()
-   {
-     
-   }
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void factorialTest1() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("factorial", cArg);
+  // Enter code here
+    assertEquals(120, (int)method.invoke(null, 5));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void sumOfDigitsTest6() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("sumOfDigits", cArg);
+  // Enter code here
+    assertEquals(10, (int)method.invoke(null, 19));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void sumOfDigitsTest5() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("sumOfDigits", cArg);
+  // Enter code here
+    assertEquals(0, (int)method.invoke(null, 0));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void sumOfDigitsTest4() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("sumOfDigits", cArg);
+  // Enter code here
+    assertEquals(9, (int)method.invoke(null, 9));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void sumOfDigitsTest3() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("sumOfDigits", cArg);
+  // Enter code here
+    assertEquals(3, (int)method.invoke(null, 12));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
+@Test
+@DisplayName("")
+void sumOfDigitsTest2() {
+    Class<?> testClass = PracticeProblem.class;
+    try {
+        Class<?>[] cArg = {int.class};
+        Method method = testClass.getDeclaredMethod("sumOfDigits", cArg);
+  // Enter code here
+    assertEquals(3, (int)method.invoke(null, -12));
+}
+
+
+    catch (NoSuchMethodException e) {
+        fail("Method does not exist");
+}
+    catch(Exception e) {
+        fail("Something weird happened");
+}
+}
 }
